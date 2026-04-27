@@ -3,62 +3,62 @@
 ```mermaid
 classDiagram
     class Usuario {
-        -int identificadorDeUsuario
-        -String login
-        -String senha
-        -String perfil
+        identificadorDeUsuario : int
+        login : String
+        senha : String
+        perfil : String
     }
 
     class Bombeiro {
-        -int identificadorDoBombeiro
-        -String nome
-        -String cpf
-        -Date dataDeNascimento
-        -String patente
-        -String especialidade
-        -int contato
-        -String status
+        identificadorDoBombeiro : int
+        nome : String
+        cpf : String
+        dataDeNascimento : Date
+        patente : String
+        especialidade : String
+        contato : int
+        status : String
 
-        +getNome()
-        +setNome()
-        +atualizarStatus()
+        getNome()
+        setNome()
+        atualizarStatus()
     }
 
     class Equipe {
-        -int identificadorDaEquipe
-        -String nome
-        -String tipo
-        -String status
+        identificadorDaEquipe : int
+        nome : String
+        tipo : String
+        status : String
     }
 
     class Ocorrencia {
-        -int identificadorDaOcorrencia
-        -String tipo
-        -Date data
-        -String hora
-        -String status
+        identificadorDaOcorrencia : int
+        tipo : String
+        data : Date
+        hora : String
+        status : String
     }
 
     class Patente {
-        -int identificadorDePatente
-        -String nome
-        -String descricao
-        -String nivelHierarquico
+        identificadorDePatente : int
+        nome : String
+        descricao : String
+        nivelHierarquico : String
     }
 
     class EscalaDeServico {
-        -int identificadorDaEscala
-        -Date data
-        -String turno
-        -String bombeiro
+        identificadorDaEscala : int
+        data : Date
+        turno : String
+        bombeiro : String
     }
 
     class Treinamento {
-        -int identificadorDeTreinamento
-        -String nome
-        -String descricao
-        -int cargaHoraria
-        -Date dataRealizacao
+        identificadorDeTreinamento : int
+        nome : String
+        descricao : String
+        cargaHoraria : int
+        dataRealizacao : Date
     }
 
     Usuario <|-- Bombeiro
