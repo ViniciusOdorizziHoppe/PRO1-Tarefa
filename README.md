@@ -1,3 +1,6 @@
+## 📊 Diagrama de Classes
+
+```mermaid
 classDiagram
     class Usuario {
         -int identificadorDeUsuario
@@ -15,7 +18,7 @@ classDiagram
         -String especialidade
         -int contato
         -String status
-        
+
         +getNome()
         +setNome()
         +atualizarStatus()
@@ -65,3 +68,4 @@ classDiagram
     Bombeiro --> Patente
     Bombeiro --> EscalaDeServico
     Bombeiro --> Treinamento
+```
