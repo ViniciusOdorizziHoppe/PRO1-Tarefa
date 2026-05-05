@@ -19,9 +19,7 @@ classDiagram
         contato : int
         status : String
 
-        getNome()
-        setNome()
-        atualizarStatus()
+      
     }
 
     class Equipe {
